@@ -1,3 +1,51 @@
+body {
+    margin: 0;
+}
+
 #logo-container {
     text-align: center;
+    padding-top: 0.25rem;
+}
+
+#nav-bar {
+    background-color: black;
+    height: 1.5rem;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+#nav-links {
+    margin: auto;
+    width: 25rem;
+}
+
+#nav-links ul {
+    margin: 0;
+}
+
+#nav-links li {
+    list-style-type: none;
+    margin: 0; 
+    width: 4.75rem;
+    float: left;
+    text-align: center;
+}
+
+#nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.text-box {
+    width: 40rem;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-style: solid;
+    border-color: black;
+}
+
+.text-heading {
+    margin: 0.5rem 0;
 }
