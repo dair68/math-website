@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #logo-container {
@@ -34,13 +35,13 @@ body {
 #nav-links li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .text-box {
     width: 40rem;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding: 1rem;
     border-style: solid;
     border-color: black;
