@@ -48,5 +48,73 @@ body {
 }
 
 .text-heading {
-    margin: 0.5rem 0;
+    margin: 0;
+}
+
+#formula-sym {
+    height: 20px;
+    width: auto;
+    position: relative;
+    top: 0.2rem;
+}
+
+.ql-toolbar {
+    display: none;
+}
+
+.ql-editor {
+    border-style: solid;
+    border-color: rgb(133, 133, 133);
+    border-width: 0.05rem;
+    box-shadow: none;
+}
+
+.big-editor .ql-editor {
+    min-height: 10rem;
+}
+
+label, .editor-label, .radio-prompt {
+    margin: 0;
+}
+
+.text-input-label, .editor-label, .radio-prompt {
+    font-weight: 500;
+} 
+
+.input-pair {
+    margin-bottom: 0.75rem;
+}
+
+.text-input {
+    width: 99%;
+}
+
+.radio-buttons {
+    display: inline;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+:-ms-input-placeholder {
+    font-style: italic;
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+#submit-btn {
+    color: white;
+    background-color: black;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+#submit-btn:hover {
+    color: lightgray;
 }

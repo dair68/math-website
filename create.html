@@ -27,29 +27,56 @@
 <div class="text-box">
     <form>
     <h2 class="text-heading">Create Puzzle</h2>
-    <p>Use this tool to post something new to the site!</p>
-    <label for="title">Title</label>
-    <br>
-    <input type="text" id="title">
-    <br>
-    <label for="author">Author</label>
-    <br>
-    <input type="text" id="author">
-    <br>
-    <label for="difficulty">Difficulty</label>
-    <br>
-    <select id="difficulty" name="difficulty">
-        <option value="none">Select difficulty</option>
-        <option value="easy">Easy</option>
-        <option value="medium">Medium</option>
-        <option value="hard">Hard</option>
-    </select>
-    <br>
-    <p>Problem Statement</p>
-    <div id="problem-editor"></div>
-    <p>Solution</p>
-    <div id="solution-editor"></div>
-    <input type="submit" value="Submit">
+    <p>Use this tool to post something new to the site! Enter math equations by clicking on <img id="formula-sym" src="images/formula_sym.png" alt="formula button">, then typing in LaTeX. All fields are required!</p>
+    <div class="input-pair">
+        <label for="title" class="text-input-label">Title</label>
+        <br>
+        <input type="text" id="title" class="text-input" placeholder="A Sweet Question">
+    </div>
+    <div class="input-pair">
+        <label for="author" class="text-input-label">Author</label>
+        <br>
+        <input type="text" id="author" class="text-input" placeholder="John Doe">
+    </div>
+    <div class="input-pair">
+        <span class="radio-prompt">Difficulty:</span>
+        <div class="radio-buttons">
+        <input type="radio" id="easy" name="difficulty" value="easy">
+        <label for="easy">Easy</label>
+        <input type="radio" id="medium" name="difficulty" value="medium">
+        <label for="medium">Medium</label>
+        <input type="radio" id="hard" name="difficulty" value="hard">
+        <label for="hard">Hard</label>
+        </div>
+    </div>
+    <div class="input-pair">
+        <p class="editor-label">Problem Statement</p>
+        <div id="problem-editor" class="big-editor"></div>
+    </div>
+    <div class="input-pair">
+        <span class="radio-prompt">Number of hints:</span>
+        <div class="radio-buttons">
+        <input type="radio" id="hint-0" name="hint" value="0">
+        <label for="hint-0">0</label>
+        <input type="radio" id="hint-1" name="hint" value="1">
+        <label for="hint-1">1</label>
+        <input type="radio" id="hint-2" name="hint" value="2">
+        <label for="hint-2">2</label>
+        <input type="radio" id="hint-3" name="hint" value="3">
+        <label for="hint-3">3</label>
+        <input type="radio" id="hint-4" name="hint" value="4">
+        <label for="hint-4">4</label>
+        </div>
+    </div>
+    <div class="input-pair">
+        <p class="editor-label">Hint 1</p>
+        <div id="hint-1-editor"></div>
+    </div>
+    <div class="input-pair">
+        <p class="editor-label">Solution</p>
+        <div id="solution-editor" class="big-editor"></div>
+    </div>
+    <input type="submit" id="submit-btn" value="Submit">
     </form>
 </div>
 <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
@@ -74,6 +101,14 @@
         },
         theme: "snow",
         placeholder: "It's over 9000!"
+    });
+
+    var hint1 = new Quill("#hint-1-editor", {
+        modules: {
+            toolbar: toolbarOptions
+        },
+        theme: "snow",
+        placeholder: "First Hint"
     });
 </script>
 </body>
