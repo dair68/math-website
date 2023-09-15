@@ -87,7 +87,7 @@ tr {
     border-bottom: 0.1rem solid lightgray;
 }
 
-tr:not(#headers):hover {
+.puzzle-row:hover {
     background-color: lightgray;
 }
 

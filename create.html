@@ -76,40 +76,10 @@
         <p class="editor-label">Solution</p>
         <div id="solution-editor" class="big-editor"></div>
     </div>
-    <input type="submit" id="submit-btn" value="Submit">
+    <input type="submit" id="submit-btn" value="Submit" onclick="submit()">
     </form>
 </div>
 <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-<script>
-    var toolbarOptions = [[{"size": []}, {"font": []}], 
-        ["bold", "italic", "underline", "strike"],
-        [{"list": "ordered"}, {"list": "bullet"}, {"align": []}],
-        ["link", "image", "video"], 
-        ["formula", "clean"]];
-
-    var quill1 = new Quill("#problem-editor", {
-        modules: {
-            toolbar: toolbarOptions
-        },
-        theme: "snow",
-        placeholder: "How many licks does it take to get to the Tootsie Roll center of a Tootsie Pop?"
-    });
-
-    var quill2 = new Quill("#solution-editor", {
-        modules: {
-            toolbar: toolbarOptions
-        },
-        theme: "snow",
-        placeholder: "It's over 9000!"
-    });
-
-    var hint1 = new Quill("#hint-1-editor", {
-        modules: {
-            toolbar: toolbarOptions
-        },
-        theme: "snow",
-        placeholder: "First Hint"
-    });
-</script>
+<script src="logic/create.js"></script>
 </body>
 </html>

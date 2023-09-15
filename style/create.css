@@ -60,13 +60,17 @@ body {
 
 .ql-toolbar {
     display: none;
+    border-color: rgb(133, 133, 133) !important;
+}
+
+.ql-container {
+    border-color: rgb(133, 133, 133) !important;
 }
 
 .ql-editor {
-    border-style: solid;
+    border-top-style: solid;
     border-color: rgb(133, 133, 133);
     border-width: 0.05rem;
-    box-shadow: none;
 }
 
 .big-editor .ql-editor {
