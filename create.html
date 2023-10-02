@@ -56,21 +56,35 @@
     <div class="input-pair">
         <span class="radio-prompt">Number of hints:</span>
         <div class="radio-buttons">
-        <input type="radio" id="hint-0" name="hint" value="0">
-        <label for="hint-0">0</label>
-        <input type="radio" id="hint-1" name="hint" value="1">
-        <label for="hint-1">1</label>
-        <input type="radio" id="hint-2" name="hint" value="2">
-        <label for="hint-2">2</label>
-        <input type="radio" id="hint-3" name="hint" value="3">
-        <label for="hint-3">3</label>
-        <input type="radio" id="hint-4" name="hint" value="4">
-        <label for="hint-4">4</label>
+        <input type="radio" id="0-hints" name="hint" value="0" oninput="adjustHints(this)" checked>
+        <label for="0-hints">0</label>
+        <input type="radio" id="1-hints" name="hint" value="1" oninput="adjustHints(this)">
+        <label for="1-hints">1</label>
+        <input type="radio" id="2-hints" name="hint" value="2" oninput="adjustHints(this)">
+        <label for="2-hints">2</label>
+        <input type="radio" id="3-hints" name="hint" value="3" oninput="adjustHints(this)">
+        <label for="3-hints">3</label>
+        <input type="radio" id="4-hints" name="hint" value="4" oninput="adjustHints(this)">
+        <label for="4-hints">4</label>
         </div>
     </div>
-    <div class="input-pair">
-        <p class="editor-label">Hint 1</p>
-        <div id="hint-1-editor"></div>
+    <div id="hints">
+        <div id="hint-container-1" class="input-pair hint">
+            <p class="editor-label">Hint 1</p>
+            <div id="hint-1" class="hint-editor"></div>
+        </div>
+        <div id="hint-container-2" class="input-pair hint">
+            <p class="editor-label">Hint 2</p>
+            <div id="hint-2" class="hint-editor"></div>
+        </div>
+        <div id="hint-container-3" class="input-pair hint">
+            <p class="editor-label">Hint 3</p>
+            <div id="hint-3" class="hint-editor"></div>
+        </div>
+        <div id="hint-container-4" class="input-pair hint">
+            <p class="editor-label">Hint 4</p>
+            <div id="hint-4" class="hint-editor"></div>
+        </div>
     </div>
     <div class="input-pair">
         <p class="editor-label">Solution</p>

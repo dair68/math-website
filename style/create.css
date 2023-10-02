@@ -59,7 +59,7 @@ body {
 }
 
 .ql-toolbar {
-    display: none;
+    /*display: none;*/
     border-color: rgb(133, 133, 133) !important;
 }
 
@@ -75,6 +75,14 @@ body {
 
 .big-editor .ql-editor {
     min-height: 10rem;
+}
+
+.hint {
+    display: none;
+}
+
+.hint-editor {
+    min-height: 4rem;
 }
 
 label, .editor-label, .radio-prompt {
